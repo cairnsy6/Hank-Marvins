@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 
 mongoose.connect("mongodb://localhost:27017/foodDB", {useNewUrlParser: true});
-// mongodb+srv://admin_user:manu123@cluster0.u03xe.mongodb.net/foodDB
+
 
 const recipeSchema = {
     personName: {type:String},
