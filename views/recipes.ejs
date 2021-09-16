@@ -1,0 +1,58 @@
+<%- include("header") -%>
+
+<h2>Whats your recipe?</h2>
+<form action="/recipes" method="post">
+    <div class="row">
+        <div class="col-lg-2"></div>
+    <div class="input-group-md col-lg-4">
+        <textarea class="form-control" placeholder="Whats your name?" aria-label="With textarea" name="personName"></textarea>
+      </div>
+    <div class="input-group-md col-lg-4">
+        <textarea class="form-control" placeholder="Whats your meal called?" aria-label="With textarea" name="recipeName"></textarea>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <select class="form-select" name="recipeCategory">
+          <option selected>What does your recipe make? - If its not on the list please request a change</option>
+          <option value="Burrito">Burritos</option>
+          <option value="Pasta">Pasta</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Meat">Meat</option>
+          <option value="Toastie">Toasties</option>
+          <option value="Dessert">Desserts</option>
+  
+        </select>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+    <div class="input-group-md col-lg-4">
+        <textarea class="form-control" placeholder="What makes up your meal?" aria-label="With textarea" name="ingredients"></textarea>
+      </div>
+    <div class="input-group-md col-lg-4">
+        <textarea class="form-control" placeholder="How do you make your meal?" aria-label="With textarea" name="process"></textarea>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <input type="text" class="form-control" placeholder="How many calories are in the meal?" name="calories">
+        </div>
+        <div class="col-lg-5">
+          <input type="text" class="form-control" placeholder="Upload the image url from unsplash" name="unsplashURL">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5"></div>
+        <button class="btn btn-lg btn-primary col-lg-2" type="submit">Send</button>
+        <div class="col-lg-5"></div>
+      </div>
+</form>
+
+<%- include("footer") -%>

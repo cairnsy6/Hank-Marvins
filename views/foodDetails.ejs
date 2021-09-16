@@ -1,0 +1,38 @@
+<%- include("header") -%>
+
+<h2>Instructions</h2>
+<h3><span style="color:black">Name :</span> <%=recipes.recipeName%></h3>
+<div class="row">
+<div class="col-lg-1"></div>
+<div class="col-lg-6">
+    <p><span style="color:black">Ingredients :</span> <%=recipes.ingredient%></p>
+</div>
+<div class="col-lg-4">
+    <p><span style="color:black">Calories :</span> <%=recipes.calories%></p>
+</div>
+<div class="col-lg-1"></div>
+</div>
+<div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+        <p><span style="color:black">Process :</span> <%=recipes.process%></p>
+    </div>
+    <div class="col-lg-1"></div>
+</div>
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="container">
+                <img src="<%=recipes.unsplashURL%>" class="card-img-top" alt="Avatar">
+              </div>
+            
+            
+          </div>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+   
+</div>
+<%- include("footer") -%>

@@ -1,0 +1,50 @@
+<%- include("header") -%>
+
+<h2>Delete</h2>
+
+
+<div class="deleteChanges">
+<form action="/delete" method="post">
+<h3><span style="color:black">Name :</span> <%=recipes.recipeName%></h3>
+<div class="row">
+<div class="col-lg-1"></div>
+<div class="col-lg-6">
+    <p><span style="color:black">Ingredients :</span> <%=recipes.ingredient%></p>
+</div>
+<div class="col-lg-4">
+    <p><span style="color:black">Calories :</span> <%=recipes.calories%></p>
+</div>
+<div class="col-lg-1"></div>
+</div>
+<div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+        <p><span style="color:black">Process :</span> <%=recipes.process%></p>
+    </div>
+    <div class="col-lg-1"></div>
+</div>
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="container">
+                <img src="<%=recipes.unsplashURL%>" class="card-img-top" alt="Avatar">
+              </div>
+            
+            
+          </div>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+<div class="row">
+<div class="col-lg-5"></div>
+    <button class="btn btn-lg btn-primary col-lg-2" name="deleteButton" id="deleteButton" value="<%=recipes._id%>" type="submit">Delete</button>
+    <div class="col-lg-5"></div>
+   
+</form>
+</div>
+
+    
+
+<%- include("footer") -%>

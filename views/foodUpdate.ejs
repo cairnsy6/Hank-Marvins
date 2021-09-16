@@ -1,0 +1,44 @@
+<%- include("header") -%>
+
+<h2>Update</h2>
+
+
+<div class="updateChanges">
+<form action="/post" method="post">
+<h3><span style="color:black">Name :</span> <%=recipes.recipeName%></h3>
+<div class="row">
+  <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <select class="form-select" name="recipeOption" value="recipeOption">
+          <option selected>What part would you like to update?</option>
+          <option value="recipeOption">The Recipe Name</option>
+          <option value="recipeOption">The Recipe Category</option>
+          <option value="recipeOption">The Ingredients</option>
+          <option value="recipeOption">The Process</option>
+          <option value="recipeOption">The calories</option>
+          <option value="recipeOption">The Image URL</option>
+  
+        </select>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <form action="/recipes" method="post">
+        <div class="row">
+            <div class="col-lg-4"></div>
+        <div class="input-group-md col-lg-4">
+            <textarea class="form-control" placeholder="Please write the change in here" aria-label="With textarea" name="foodUpdate"></textarea>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+
+<div class="row">
+    <div class="col-lg-5"></div>
+    <button class="btn btn-lg btn-primary col-lg-2" name="updateButton" id="updateButton" value="<%=recipes._id%>" type="submit">Update</button>
+    <div class="col-lg-5"></div>
+   
+</form>
+</div>
+
+    
+
+<%- include("footer") -%>

@@ -1,0 +1,26 @@
+<%- include("header") -%>
+<h2>Burritos</h2>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <% recipes.forEach(function(recipe){ %>
+    <div class="col-lg-4">
+      <a href="/food/<%=recipe._id%>">
+      <div class="card">
+        <div class="container">
+            <img src="<%=recipe.unsplashURL%>" class="card-img-top" alt="Avatar">
+            <div class="middle">
+              <div class="text" id="foodOptions"><%=recipe.recipeName%></div>
+            </div>
+          </div>
+        
+        
+      </div>
+      </a>
+    </div>
+    
+    <%  }) %>
+</div>
+
+
+<%- include("footer") -%>

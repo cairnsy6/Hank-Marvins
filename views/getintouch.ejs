@@ -1,0 +1,55 @@
+<%- include('header') -%>
+
+<h2>Get In Touch</h2>
+<p>Please leave an email with your comments using the form provided below.</p>
+
+<form action="/" method="post">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col-lg-3">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+      <div class="row">
+    <div class="col-lg-2"></div>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" placeholder="What's your email?" aria-label="First name">
+      </div>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" placeholder="Confirm your email" aria-label="Last name">
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="input-group-md col-lg-4">
+        <textarea class="form-control" placeholder="Please describe your query so that we can better assist you" aria-label="With textarea"></textarea>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+    <label class="col-lg-12">Please choose your gender below</label>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" name="type" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="type" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Female</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="type" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">Other</label>
+      </div>
+      <div class="row">
+      <div class="col-lg-5"></div>
+      <button class="btn btn-lg btn-primary col-lg-2" type="submit">Send</button>
+      <div class="col-lg-5"></div>
+    </div>
+</form>
+
+<%- include('footer') -%>
